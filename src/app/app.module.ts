@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { FooterComponent } from './footer/footer.component';
+import { DatecountPipe } from './datecount.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     HomeComponent,
     QuotesComponent,
-    FooterComponent
+    FooterComponent,
+    DatecountPipe
   ],
   imports: [
     BrowserModule,
