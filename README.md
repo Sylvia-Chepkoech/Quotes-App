@@ -1,27 +1,42 @@
-# QuotesApp
+# {Quotes-App}
+#### {An applicattion that allows the users to create quotes and upvote or downvote the quotes}, {}
+#### By **{Sylvia Chepkoech}**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+## Setup/Installation Requirements
+* Open Terminal {Ctrl+Alt+T}
+* cd into Directory
+* git clone https://github.com/Sylvia-Chepkoech/Quotes-App.git
+* Open angular files on your code editor or serve on the browser
 
-## Development server
+## Making Modifications
+To make advancements/modifications, follow these steps:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* Fork the repository
+* Create a new branch (git checkout -b x-feature)
+* Make the appropriate changes in the files
+* Add changes made
+* Commit your changes (git commit -am 'x-feature')
+* Push to the branch (git push origin x-feature)
+* Create a Pull Request
 
-## Code scaffolding
+## Behaviour Driven Development
+Below are steps on how to use the form therein;
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Enter your name.
+* Enter the title of your Quote.
+* Enter Description for your Quote
+* Enter The name Author.
+* After the quote has been published, you can interact with the app by liking, disliking or delete quote.
 
-## Build
+## Technologies Used
+* HTML
+* CSS
+* Angular
+* Bootstrap 5
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Support and contact details
+Should you be unable to access the website, have any recommendations and/or questions, feel free to email me:sylvia.chepkoech@student.moringaschool.com
+### License
+*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+Copyright (c) {2022} **{Sylvia Chepkeoch}**
+  
