@@ -11,21 +11,48 @@
       <div class="col-md-3" id="cols" *ngFor='let quote of woe; let i=index'>
         <div class="card">
           <img src="../../assets/pexels-rafael-guajardo-604684.jpg" class="card-img-top" alt="smoke"/>
-          <div class="card-body">
-            <h5 class="card-title">{{quote.quoteTitle}}</h5>
-            <p class="card-text">
-              <ul>
-                <li></li>
-              </ul>
-            
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+          <ul class="words">
+            <li><h5 class="card-title">{{quote.quoteTitle}}</h5></li>
+            <li class="sm1"><p><span class="smalls">Posted by:</span>{{quote.owner}}</p></li>
+            </ul>
+            <div class="card-footer">
+            <ul class="navs">
+              <li>
+                <button type="submit" (click)='toggleDescription(i)' id="rBtn" class="btn btn-success">Read Quote</button>
+              </li>
+              <li class="sm1">
+                <p><span class="smalls">Posted On:</span> {{quote.completeDate|date}}</p>
+              </li>
+            </ul>
+            </div>
+            <app-about-quote *ngIf='quote.showQuoteDescription' [addQuote]='quote' (qDelete)='removeQuote($event,i)'>
+          </app-about-quote>   
+          <div class="row">
+            <div class="col-md-12">
+                <div class="modalBut">
+                    <button type="submit" id="mBut" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <i class="fa fa-angle-double-right" aria-hidden="true"></i> Create Quote</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<section class="mod">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <app-create-quote (addQuote)="addNewQuote($event)"></app-create-quote>
+      </div>
+    </div>
+  </div>
+</section>           
+          
+       
+           
           </div>
         </div>
       </div>
-    </div>
+  
 
-  </div>
+
 </section>
 <app-footer></app-footer>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { TheQuotes } from '../the-quotes';
 
 @Component({
   selector: 'app-about-quote',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-quote.component.css']
 })
 export class AboutQuoteComponent implements OnInit {
-  @Input() addQuote: TheQuotes;
+  @Input() addQuote!: TheQuotes;
   @Output() qDelete = new EventEmitter <boolean> ();
 
   numberOfLikes: number = 0;

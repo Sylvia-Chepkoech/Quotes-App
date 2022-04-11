@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { QuotesComponent } from './quotes/quotes.component';
-import { FooterComponent } from './footer/footer.component';
-import { DatecountPipe } from './datecount.pipe';
 import { AboutQuoteComponent } from './about-quote/about-quote.component';
+import { DatecountPipe } from './datecount.pipe';
 import { CreateQuoteComponent } from './create-quote/create-quote.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +18,15 @@ import { CreateQuoteComponent } from './create-quote/create-quote.component';
     NavbarComponent,
     HomeComponent,
     QuotesComponent,
-    FooterComponent,
-    DatecountPipe,
     AboutQuoteComponent,
-    CreateQuoteComponent
+    DatecountPipe,
+    CreateQuoteComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
