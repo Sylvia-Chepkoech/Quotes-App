@@ -11,6 +11,7 @@ import { AboutQuoteComponent } from './about-quote/about-quote.component';
 import { DatecountPipe } from './datecount.pipe';
 import { CreateQuoteComponent } from './create-quote/create-quote.component';
 import { FooterComponent } from './footer/footer.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     AboutQuoteComponent,
     DatecountPipe,
     CreateQuoteComponent,
-    FooterComponent
+    FooterComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

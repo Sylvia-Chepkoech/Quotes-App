@@ -7,3 +7,20 @@ h3 {
   padding: 20px;
   
 }
+.sm1 {
+  text-align: center;
+}
+
+.sm1, .navs, .words {
+  list-style: none;
+}
+
+.card-title {
+  list-style-type: none;
+  text-align: center;
+  color: brown;
+}
+
+#rBtn {
+  text-align: center;
+}
